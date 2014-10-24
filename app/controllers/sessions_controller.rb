@@ -12,9 +12,9 @@ class SessionsController < ApplicationController
     end
   end
 
-  def destroy
-    sign_out
-    redirect_to root_path
+  def destroy #注销destroy行为/action
+    sign_out #帮助方法，注销
+    redirect_to root_path 
   end
 
 

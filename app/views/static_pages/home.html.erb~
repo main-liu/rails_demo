@@ -1,24 +1,24 @@
-<% if signed_in? %>
+<% if signed_in? %> <!--如果登录了，则显示微博信息-->
   <div class="row">
     <aside class="span4">
       <section>
-        <%= render 'shared/user_info' %>
+        <%= render 'shared/user_info' %> <!--用户信息-->
       </section>
       <section>
-	<%= render 'shared/stats' %>
+	<%= render 'shared/stats' %> <!--关注被关注状态-->
       </section>
       <section>
-        <%= render 'shared/micropost_form' %>
+        <%= render 'shared/micropost_form' %>  <!--发布微博-->
       </section>
     </aside>
     <div class="span8">
-      <h3>Micropost Feed</h3>
+      <h3>微博列表</h3>
       <%= render 'shared/feed' %>
     </div>
   </div>
-<% else %>
+<% else %> <!--如果未登录了，显示登录页面-->
   <div class="center hero-unit">
-    <h1>Welcome to the Sample App</h1>
+    <h1>欢迎光临本站</h1>
 
     <h2>
       This is the home page for the
